@@ -3,6 +3,7 @@
 https://www.evercoolhk.com/data/evercool/catalogues/dummy.pdf
 
 ### Tools
+- https://github.com/ts1/flipbook-vue
 - https://github.com/Nodlik/StPageFlip
 - [davidshimjs/qrcodejs: Cross-browser QRCode generator for javascript](https://github.com/davidshimjs/qrcodejs)
 - [EasyQRCodeJS, Try It!](https://www.easyproject.cn/easyqrcodejs/tryit.html)
