@@ -3,16 +3,26 @@
 <html>
   <head>
     <style>
-      body { margin: 0 }
+       html {
+        height: -webkit-fill-available;
+      }
+
+      body {
+        min-height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+        margin: 0
+      }
+
       .flipbook {
         width: 100vw;
         height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
       }
     </style>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    
-        <script src="https://unpkg.com/flipbook-vue@1.0.0-beta.4/dist/flipbook.min.js"></script>
-
+        <script src="./vue@3.4.25.global.js"></script>
+        <script src="./flipbook-vue@1.0.0-beta.4.min.js"></script>
   </head>
   <body>
     <div id="app">
