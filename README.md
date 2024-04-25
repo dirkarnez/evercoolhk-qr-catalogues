@@ -1,7 +1,7 @@
 [evercoolhk-qr-catalogues](https://dirkarnez.github.io/evercoolhk-qr-catalogues/)
 =================================================================================
-https://www.evercoolhk.com/data/evercool/catalogues/dummy.pdf
-https://www.evercoolhk.com/data/evercool/catalogues/index.html
+- https://www.evercoolhk.com/data/evercool/catalogues/dummy.pdf
+- https://www.evercoolhk.com/data/evercool/catalogues/index.html
 ### Tools
 - https://github.com/ts1/flipbook-vue
   - [A Pen by liJasper](https://codepen.io/lijasper/pen/mdqLXzK)
