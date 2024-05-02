@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       html {
+        height: -webkit-fill-available;
+      }
+
+      body {
+        min-height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+        margin: 0
+      }
+
+      .flipbook {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+      }
+    </style>
+        <script src="../vue@3.4.25.global.js"></script>
+        <script src="../flipbook-vue@1.0.0-beta.4.min.js"></script>
+  </head>
+  <body>
+
+
+    <div id="app">
+      <flipbook class="flipbook" :pages="pages" v-slot="flipbook">
+          <!-- <button @click="flipbook.flipLeft">Previous Page</button>
+          <button @click="flipbook.flipRight">Next Page</button> -->
+      </flipbook>
+    </div>
+    <script>
+    	Vue.createApp({
+        name: "2",
+        data(){
+          return {
+              pages: [
+                  null,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-001.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-002.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-003.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-004.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-005.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-006.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-007.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-008.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-009.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-010.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-011.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-012.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-013.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-014.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-015.jpg`,
+                  `${window.location.pathname}/HI%20CAPACITY%20FAN%20COIL%20UNIT%2020240502-page-016.jpg`
+              ]
+            }
+        },
+        components: {
+            Flipbook 
+        }
+      }).mount('#app')
+    </script>
+  </body>
+</html>
+
