@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       html {
+        height: -webkit-fill-available;
+      }
+
+      body {
+        min-height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+        margin: 0
+      }
+
+      .flipbook {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+      }
+    </style>
+        <script src="../vue@3.4.25.global.js"></script>
+        <script src="../flipbook-vue@1.0.0-beta.4.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <flipbook class="flipbook" :pages="pages" v-slot="flipbook">
+          <!-- <button @click="flipbook.flipLeft">Previous Page</button>
+          <button @click="flipbook.flipRight">Next Page</button> -->
+      </flipbook>
+    </div>
+    <script>
+    	Vue.createApp({
+        name: "12",
+        data(){
+          return {
+              pages: [
+                  null,
+                  `./TFMC%20cata.%205.2-page-001.jpg`,
+                  `./TFMC%20cata.%205.2-page-002.jpg`,
+                  `./TFMC%20cata.%205.2-page-003.jpg`,
+                  `./TFMC%20cata.%205.2-page-004.jpg`,
+                  `./TFMC%20cata.%205.2-page-005.jpg`,
+                  `./TFMC%20cata.%205.2-page-006.jpg`,
+                  `./TFMC%20cata.%205.2-page-007.jpg`,
+                  `./TFMC%20cata.%205.2-page-008.jpg`,
+                  `./TFMC%20cata.%205.2-page-009.jpg`,
+                  `./TFMC%20cata.%205.2-page-010.jpg`,
+                  `./TFMC%20cata.%205.2-page-011.jpg`,
+                  `./TFMC%20cata.%205.2-page-012.jpg`,
+                  `./TFMC%20cata.%205.2-page-013.jpg`,
+                  `./TFMC%20cata.%205.2-page-014.jpg`,
+                  `./TFMC%20cata.%205.2-page-015.jpg`,
+                  `./TFMC%20cata.%205.2-page-016.jpg`,
+                  `./TFMC%20cata.%205.2-page-017.jpg`,
+                  `./TFMC%20cata.%205.2-page-018.jpg`,
+                  `./TFMC%20cata.%205.2-page-019.jpg`,
+                  `./TFMC%20cata.%205.2-page-020.jpg`,
+                  `./TFMC%20cata.%205.2-page-021.jpg`,
+                  `./TFMC%20cata.%205.2-page-022.jpg`,
+                  `./TFMC%20cata.%205.2-page-023.jpg`,
+                  `./TFMC%20cata.%205.2-page-024.jpg`,
+                  `./TFMC%20cata.%205.2-page-025.jpg`,
+                  `./TFMC%20cata.%205.2-page-026.jpg`
+                ],
+            }
+        },
+        components: {
+            Flipbook 
+        }
+      }).mount('#app')
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
