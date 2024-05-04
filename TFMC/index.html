@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       html {
+        height: -webkit-fill-available;
+      }
+
+      body {
+        min-height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+        margin: 0
+      }
+
+      .flipbook {
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+      }
+    </style>
+        <script src="../vue@3.4.25.global.js"></script>
+        <script src="../flipbook-vue@1.0.0-beta.4.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <flipbook class="flipbook" :pages="pages" v-slot="flipbook">
+          <!-- <button @click="flipbook.flipLeft">Previous Page</button>
+          <button @click="flipbook.flipRight">Next Page</button> -->
+      </flipbook>
+    </div>
+    <script>
+    	Vue.createApp({
+        name: "12",
+        data(){
+          return {
+              pages: [
+                  null,
+                  `./1_TFMC%20catalogue(EN)%202024-page-001.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-002.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-003.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-004.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-005.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-006.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-007.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-008.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-009.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-010.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-011.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-012.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-013.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-014.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-015.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-016.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-017.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-018.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-019.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-020.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-021.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-022.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-023.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-024.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-025.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-026.jpg`,
+                  `./1_TFMC%20catalogue(EN)%202024-page-027.jpg`
+                ],
+            }
+        },
+        components: {
+            Flipbook 
+        }
+      }).mount('#app')
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
